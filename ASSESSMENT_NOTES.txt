@@ -1,0 +1,12 @@
+ASSESSMENT NOTES:
+
+- Video: implemented as a local loopback using flutter_webrtc so you can test local & remote streams on a single device.
+  * This avoids external signaling servers or SDK keys for testing.
+  * For an actual one-to-one over network, integrate a signaling server or use a managed SDK (Agora/Chime/Twilio).
+
+- User list: uses https://reqres.in API and caches results in sqflite for offline access.
+
+- To produce production-ready app (icons, signing, store readiness), run `flutter create .` then add native assets and signing keys.
+
+- Known limitations: screen sharing not included; push notifications not included.
+
